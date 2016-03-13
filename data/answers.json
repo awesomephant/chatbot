@@ -1,0 +1,37 @@
+{
+    "intro": [
+        "I’m Meekan, your team’s new scheduling assistant. I can schedule meetings in seconds, check your schedule, and even find flights! Try it now, say: <strong>Max, what's your latest project?</strong>"
+    ],
+    "hi": [
+        "Hiya :)",
+        "Hey there :)",
+        "Hello",
+        "Whatup",
+        "Hi :)"
+    ],
+    "listProjects": [
+        "Glad you asked! Here's a list of all the {{#mods}}{{name}} {{/mods}}projects I've worked on:\n\n{{#projects}}({{ @index }}) {{title}}\n{{/projects}}\n\nWhich one would you like to know more about?"
+    ],
+    "project": [
+        "Sure! Here's some more information on the {{title}} project:\n\nDescription: {{description}} \n\n Link: <a href='{{url}}'>{{ url }}</a>"
+    ],
+    "showTwitter": [
+        "My Twitter handle is <a href='http://www.twitter.com/{{contact.twitter}}'>{{contact.twitter}}</a>",
+        "I'm {{contact.twitter}} on Twitter",
+        "You can follow me {{contact.twitter}}"
+    ],
+    "showNah": [
+        "You wish.",
+        "Haha no",
+        "Nope :)"
+    ],
+    "showInstagram": [
+        "My Instagram is <a href='http://www.instagram.com/{{contact.twitter}}'>{{contact.twitter}}</a>"
+    ],
+    "showEmail": [
+        "My email is <a href='mailto:{{contact.email}}'>{{contact.email}}</a>"
+    ],
+    "twitterFollowButton": [
+        "<a href='https://twitter.com/intent/follow?screen_name=awesomephant' class='twitter-follow-button'>Follow @awesomephant</a>"
+    ]
+}

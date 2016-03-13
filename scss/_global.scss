@@ -1,0 +1,126 @@
+$lightgray: rgb(240,240,240);
+$blue: #3D4CFF;
+$input-height: 4rem;
+
+@keyframes in {
+    0% { transform: translateY(-20px); opacity: 0}
+    100% { transform: translateY(0); opacity: 1 }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+main {
+    position: relative;
+    max-width: 40rem;
+    height: 100vh;
+}
+
+.input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: .5rem;
+    height: $input-height;
+    background: $lightgray;
+}
+
+.in {
+    border: 1px solid darken($lightgray, 10);
+    padding: .6rem;
+    flex-grow: 1;
+    border-radius: 4px;
+    flex-basis: 85%;
+    
+    &:focus {
+        outline: 0;
+        border: 1px solid $blue;
+    }
+}
+
+.send {
+    background-color: transparent;
+    background-image: url(send.svg);
+    border: none;
+    color: $blue;
+    font-weight: bold;
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    flex-basis: 20%;
+    cursor: pointer;
+    &:hover, &:focus {
+        opacity: .5;
+    }
+}
+
+.messages {
+    list-style: none;
+    display: block;
+    padding: 1rem;
+    position: relative;
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.message {
+    white-space: pre-wrap;
+    margin-bottom: 1rem;
+    background: $lightgray;
+    padding: 1rem;
+    flex-basis: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: .9rem;
+    line-height: 1.45;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    position: relative;
+    transform-origin: top left;
+    animation: in .2s ease-out;
+    
+    &:after {
+        content: '';
+        background: url(arrow.svg);
+        display: block;
+        left: -5px;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+    
+    &.me {
+        background: $blue;
+        transform-origin: bottom right;
+        color: white;
+        margin-right: 0;
+        margin-left: 2rem;
+        
+        &:after {
+            left: auto;
+            background: url(arrow-blue.svg);
+            right: -7px;
+            transform: scaleX(-1);
+        }
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.loading {
+    width: 7rem;
+    height: 3.2rem;
+}

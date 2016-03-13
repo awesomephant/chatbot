@@ -1,0 +1,196 @@
+/* Spinner 3Balls Scale */
+@keyframes spScaleAlpha {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spScaleAlphaBefore {
+  0% {
+    opacity: 0.25;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0.25;
+  }
+}
+@keyframes spScaleAlphaAfter {
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+.spinner, .spinner:before, .spinner:after {
+  border-radius: 50%;
+  background-color: #000;
+  width: 18px;
+  height: 18px;
+  transform-origin: center center;
+  display: inline-block;
+}
+
+.spinner {
+  position: relative;
+  background-color: black;
+  opacity: 1;
+  animation: spScaleAlpha 1s infinite linear;
+  right: -2rem;
+}
+
+.spinner:before, .spinner:after {
+  content: '';
+  position: relative;
+  opacity: 0.25;
+}
+
+.spinner:before {
+  left: 30px;
+  top: 0px;
+  animation: spScaleAlphaBefore 1s infinite linear;
+}
+
+.spinner:after {
+  left: -30px;
+  top: -18px;
+  animation: spScaleAlphaAfter 1s infinite linear;
+}
+
+@keyframes in {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+main {
+  position: relative;
+  max-width: 40rem;
+  height: 100vh;
+}
+
+.input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: .5rem;
+  height: 4rem;
+  background: #f0f0f0;
+}
+
+.in {
+  border: 1px solid #d7d7d7;
+  padding: .6rem;
+  flex-grow: 1;
+  border-radius: 4px;
+  flex-basis: 85%;
+}
+.in:focus {
+  outline: 0;
+  border: 1px solid #3D4CFF;
+}
+
+.send {
+  background-color: transparent;
+  background-image: url(send.svg);
+  border: none;
+  color: #3D4CFF;
+  font-weight: bold;
+  font-size: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  flex-basis: 20%;
+  cursor: pointer;
+}
+.send:hover, .send:focus {
+  opacity: .5;
+}
+
+.messages {
+  list-style: none;
+  display: block;
+  padding: 1rem;
+  position: relative;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.message {
+  white-space: pre-wrap;
+  margin-bottom: 1rem;
+  background: #f0f0f0;
+  padding: 1rem;
+  flex-basis: 100%;
+  font-family: Helvetica, sans-serif;
+  font-size: .9rem;
+  line-height: 1.45;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  position: relative;
+  transform-origin: top left;
+  animation: in .2s ease-out;
+}
+.message:after {
+  content: '';
+  background: url(arrow.svg);
+  display: block;
+  left: -5px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.message.me {
+  background: #3D4CFF;
+  transform-origin: bottom right;
+  color: white;
+  margin-right: 0;
+  margin-left: 2rem;
+}
+.message.me:after {
+  left: auto;
+  background: url(arrow-blue.svg);
+  right: -7px;
+  transform: scaleX(-1);
+}
+.message img {
+  display: block;
+  max-width: 100%;
+}
+
+.loading {
+  width: 7rem;
+  height: 3.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

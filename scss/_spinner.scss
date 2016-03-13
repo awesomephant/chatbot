@@ -1,0 +1,48 @@
+/* Spinner 3Balls Scale */
+$spCol: #000;
+@keyframes spScaleAlpha {
+	0% { opacity: 1; }
+	33% {  opacity: 0.25; }
+	66% { opacity: 0.25; }
+	100% {  opacity: 1; }
+}
+@keyframes spScaleAlphaBefore {
+	0% { opacity: 0.25; }
+	33% { opacity: 1; }
+	66% { opacity: 0.25; }
+}
+@keyframes spScaleAlphaAfter {
+	33% { opacity: 0.25; }
+	66% { opacity: 1; }
+	100% { opacity: 0.25; }
+}
+.spinner, .spinner:before, .spinner:after {
+	border-radius: 50%;
+	background-color: $spCol;
+	width: 18px;
+	height: 18px;
+	transform-origin: center center;
+	display: inline-block;
+}
+.spinner {
+	position: relative;
+	background-color: rgba($spCol,1);
+	opacity: 1;
+	animation: spScaleAlpha 1s infinite linear;
+    right: -2rem;
+}
+.spinner:before, .spinner:after {
+	content: '';
+	position: relative;
+	opacity: 0.25;
+}
+.spinner:before {
+	left: 30px;
+	top: 0px;
+	animation: spScaleAlphaBefore 1s infinite linear;
+}
+.spinner:after {
+	left: -30px;
+	top: -18px;
+	animation: spScaleAlphaAfter 1s infinite linear;
+}

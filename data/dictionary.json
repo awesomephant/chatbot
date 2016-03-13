@@ -1,0 +1,56 @@
+{
+    "modifiers": [
+        {
+            "mod-type": "date",
+            "name": "year-2016",
+            "strings": ["2016", "this year"]
+        },
+        {
+            "mod-type": "category",
+            "name": "illustration",
+            "strings": ["illustration", "illustrations", "drawings", "drawing"]
+        },
+        {
+            "mod-type": "category",
+            "name": "web",
+            "strings": ["web", "webdesign", "internet", "website"]
+        }
+    ],
+    "objects": [
+        {
+            "name": "hi",
+            "strings": ["hi", "hello", "whatsup", "sup", "hiya", "whatup", "yo"],
+            "method": "hi"
+        },
+                {
+        "name": "projects",
+            "strings": ["projects", "work", "portfolio", "project", "examples", "worked", "working"],
+            "method": "listProjects"
+        },
+        {
+            "name": "contact",
+            "strings": ["contact", "info", "details"],
+            "method": "show"
+        },
+        {
+            "name": "twitter",
+            "strings": ["twitter", "twiter", "twtr"],
+            "method": "show"
+        },
+        {
+            "name": "instagram",
+            "strings": ["instagram", "insta"],
+            "method": "show"
+        },
+        {
+            "name": "email",
+            "strings": ["email", "gmail", "emial"],
+            "method": "show"
+        },
+        {
+            "name": "number",
+            "strings": ["number", "#", "phone", "tel", "telephone", "snap", "snapchat"],
+            "method": "show"
+        }
+    ]
+}

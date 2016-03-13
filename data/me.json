@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "title": "Spaced",
+            "url": "www.example.com",
+            "category": "illustration",
+            "description": "Zwicker und Partner — Seit 39 Jahren Experten für Radiologie und Krebsbehandlung in Konstanz am Bodensee",
+            "images": ["https://lh3.googleusercontent.com/adkrGO5-bZDJEQxnSZIBqJAaf8x94YCWmOtVJgd3oXwBBuba2VRmARWbEeYAPhk6_lTGSTnpie4a0abubKrXNiu-W6b9IPOF68HNmJXuaIdx3HlrS1SqkkF2hZrns9zGCnvZv1kv02VCW_-lKkoXxisyJKj_HitQjjfOtLbDGxQ1jpnIkNYZf1SWoQEEIZBE-Ub6yS7ESVxJaZq0wFCcPNneULuvj_-Am7lKHKU3pc7SwFwH1BS-lpzowmorL6GmfeC96gw3Q_sbf-jmIBmSna5BL4ek4HezFPtIGJx63FCD9IEo_n8Rfhqb5_IZjwJCJel5fLR2w5MPF5eql8NTxTv7EOTe1IgPMW_hR9fhs_5VpQua9_x4gJHRJUeWNjLAiagVX3yJLR5viqeZ6aGTM8bwQJVDxaqjvFbbW9Z9M1uerYLYJTALinZQhGaeVAzh-Ad0nFF-FV85TNRm2U5LfOsrDULyLZ8nTTkmt2fb--Ob4KPtlHNqB82sSd9s3jrH1IrI-ghG_WmeUyIXu37kBqhZZfJ8KxI21cl-_qViQUZ84Ds3ZpQC8R9IV3ICKkk=w1422-h951-no", "https://lh3.googleusercontent.com/GTEqcV_eaGWCEoWSfS77bKwa6jwU5PCieho8XGqFyD7EKXgSWhhotM2yysxUPRVwBmyBxw5SsgMSKN4bSm6gJm5z5L0t5InzjDw4na0Y1CV9VdhSUC9W0402iVb3MT5h0f8uJndvcYBMnnHO4oM6GYfUgsN8nERhxQf9_zryrlBLHGEYYZI4F0MqzLjid9uH_Y9EcWqYXoYu68A5Chc1fOVHOw9Wz_AW266D-eLFnNJLIKnz8s7dOkLJbh8DYhkx8INL1ltPKAsFLTe_-S81NB3qfhsmixDMqZlKUg8eCEz8kwKPW1ypg7JmkGA-fdaGdEY3AwEpEl7mWHlM_C26g6mE0wsnZ2fRXizgXBRlDQz4vYX0LHmbDTYutMobTn5Y9LYqE0e1E3qmqdiALLedJoKKRTtMuSs-2H_IWfB0BD1dnGUuFQZSqb7zqo3QbrspB0nf7ad-zYggAS505UvLu0nlQgdthZeCty1I3lggxQx-G9i4ALFJIirRgOwysxgK__UD7oclKvdJHhi1gIb73i32OgK2z4GkvoOLWTPAjEP4ItwJ_jQ6_uiSqEkxZQU=w714-h951-no"]
+        },
+        {
+            "title": "Recovered",
+            "url": "www.example.com",
+            "category": "illustration",
+            "description": "Zwicker und Partner — Seit 39 Jahren Experten für Radiologie und Krebsbehandlung in Konstanz am Bodensee"
+        },
+        {
+            "title": "Radiologen Konstanz Responsive Redesign",
+            "url": "www.radiologen-konstanz.de",
+            "category": "web",
+            "description": "A new website for my dad's surgery. "
+        }
+    ],
+    "contact": {
+        "email": "awesomephant@gmail.com",
+        "twitter": "@awesomephant",
+        "instagram": "@awesomephant"
+    }
+}
