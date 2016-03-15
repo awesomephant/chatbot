@@ -1,6 +1,6 @@
 {
     "intro": [
-        "Hi! I'm Albertron 3000. I can tll you about about Max's work and give you his contact details. Try it now, say: <strong>Max, have you worked on any web projects?</strong>"
+        "Hi! I'm Max-o-tron 5000. I can tell you about about Max's work and give you his contact details. Try it now, say: <strong>Max, have you worked on any web projects?</strong>"
     ],
     "hi": [
         "Hiya :)",
@@ -17,8 +17,8 @@
     ],
     "showTwitter": [
         "My Twitter handle is <a href='http://www.twitter.com/{{contact.twitter}}'>{{contact.twitter}}</a>",
-        "I'm {{contact.twitter}} on Twitter",
-        "You can follow me {{contact.twitter}}"
+        "I'm <a href='http://www.twitter.com/{{contact.twitter}}'>{{contact.twitter}}</a> on Twitter",
+        "You can follow me <a href='http://www.twitter.com/{{contact.twitter}}'>{{contact.twitter}}</a>"
     ],
     "showNah": [
         "You wish.",
